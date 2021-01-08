@@ -27,14 +27,12 @@
     Daarnaast heb ik ervaring met grafisch design en online martketing.
   </p>
 
-  <form name="contact" class="header-box" data-netlify="true">
-    <input type="text" value="Naam">
-    <input type="email">
-    <textarea></textarea>
-    <input type="submit">
-    <input type="hidden" name="contact" value="contact">
+  <form name="contact" method="POST" data-netlify="true" class="header-box">
+    <label>Naam <input type="text" name="name" /></label>
+    <label>E-mail: <input type="email" name="email" /></label>
+    <label>Bericht: <textarea name="message"></textarea></label>
+    <button type="submit">Verstuur</button>
   </form>
-
 
 </body>
 
